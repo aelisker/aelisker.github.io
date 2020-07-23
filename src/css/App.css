@@ -1,0 +1,422 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --primary-color: black;
+  --secondary-color: #b7309b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--secondary-color);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/**Header area below**/
+header {
+  padding: 20px 5%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url("../assets/images/station-full.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 9999;
+  justify-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header h1 a{
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  color: black;
+  background: white;
+  padding: 5px 10px;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul,
+footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1.55vw;
+  line-height: 1.6;
+}
+
+/* header nav ul li a:hover {
+  color: rgba(0, 0, 0, 1);
+  background: white;
+  transition: 1s;
+} */
+
+.header-active {
+  color: rgba(0, 0, 0, 1) !important;
+  background: white;
+  transition: 1s;
+}
+/**End header**/
+
+.page-footer {
+  padding: 20px 5%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  top: 0;
+  background-image: url("../assets/images/station-full.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 9999;
+  justify-items: center;
+  justify-content: center;
+}
+
+.react-icon {
+  color: white;
+  font-size: x-large;
+}
+
+footer nav ul li {
+  margin: 0px 10px;
+}
+
+/**General section formatting below**/
+section {
+  padding: 60px 5% 60px 8%;
+}
+
+.hover-item {
+  transition: .5s ease-in-out;
+  }
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 6;
+  width: 85%;
+}
+
+.section-title {
+  font-size: 1.6em;
+  color:var(--primary-color);
+  text-align: right;
+  margin: 0 20px 0 0;
+  flex: 1 10%;
+  align-items: flex-start;
+  border-right: solid 1vw var(--secondary-color);
+  padding-right: 15px;
+  width: 15%;
+}
+
+/*Grid area*/
+.service-grid-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: normal;
+}
+
+.service-grid-container {
+  width: 100%;
+  color:var(--primary-color);
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  gap: 12px;
+}
+
+.service-grid-item {
+  width: 100%;
+  background-size: cover;
+  padding: 15px 0;
+  border: 2px solid var(--primary-color);
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  position: relative;
+}
+
+/*Idea for gradient swap came from https://keithjgrant.com/posts/2017/07/transitioning-gradients/*/
+.service-grid-item::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(rgba(129, 214, 235, .6), rgba(183, 48, 155, .7));
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 1s;
+}
+
+.service-grid-item::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(rgba(183, 48, 155, .7), rgba(129, 214, 235, .6));
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: 1s;
+}
+
+.service-grid-item:hover::after, .service-grid-item:hover::before {
+  opacity: 1;
+  transition: 1;
+}
+
+.service-grid-item:hover .grid-text, .active {
+  color: aqua;
+  transition: 1s;
+  transition-timing-function: ease-out;
+}
+
+.service-grid-item a .grid-text {
+  padding: 10px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.service-grid-item a {
+  text-decoration: none;
+  text-align: left;
+  z-index: 6;
+}
+
+.grid-text h4 {
+  font-weight: normal;
+}
+
+.service-grid-item.panel-1 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  min-height: 400px;
+  max-height: 500px;
+  /* background-image: url("../images/tech.JPG"); */
+}
+
+.service-grid-item.panel-2, .service-grid-item.panel-3, .service-grid-item.panel-4, .service-grid-item.panel-5 {
+  min-height: 200px;
+  max-height: 250px;
+}
+
+.service-grid-item.panel-2 {
+  /* background-image: url("../images/netflix.jpg"); */
+}
+
+.service-grid-item.panel-3 {
+  /* background-image: url("../images/weather.jpg"); */
+}
+
+.service-grid-item.panel-4 {
+  /* background-image: url("../images/schedule.jpg"); */
+}
+
+.service-grid-item.panel-5 {
+  /* background-image: url("../images/quiz.jpg"); */
+}
+
+/**End grid**/
+
+/**Contact below**/
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.contact-info nav ul li a {
+  margin: 1vw;
+  font-weight: 500;
+  font-size: 2.5vw;
+  line-height: 1.6;
+  color: black;
+  font-weight: bold;
+}
+
+.contact-info nav ul li a:hover {
+  color: white;
+  background: black;
+}
+/**End contact**/
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    /* this will be applied on any screen smaller than 980px */
+    header {
+        padding-bottom: 18px;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  /* this will be applied on any screen between 768px and 575px */
+  
+  section {
+      padding: 30px 15px 15px 15px;
+  }
+
+  /**Changing font to vw lower than 768px**/
+  .hero-subtitle h2 {
+      font-size: 6.5vw;
+      margin: 0 30px;
+  }
+
+  .flex-row {
+      display: inline-block;
+  }
+
+  .about, .work, .contact {
+      margin: 0 30px;
+  }
+
+  /**Reformatting the section titles from sitting left with right border to sitting top with bottom border**/
+  .section-title {
+      text-align: center;
+      width: 100%;
+      border-bottom: solid 1.3vh var(--secondary-color);
+      border-right: none;
+      display: block;
+      margin: 0 0 20px 0;
+      padding: 0 0 15px 0;
+      flex: unset;
+      font-size: 4vw;
+  }
+
+  .about p {
+      font-size: 2vw;
+  }
+
+  .content {
+      flex: unset;
+      width: 100%;
+  }
+
+  /**Changed gird to go two column, text to white for better contrast on mobile**/
+  .service-grid-container {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .service-grid-item h3, .service-grid-item h4 {
+      color: white;
+  }
+
+  .contact-info {
+      justify-content: center;
+  }
+
+  .contact-info nav ul li a {
+      margin: 0 1vw;
+      font-size: 3.1vw;
+  }
+
+  .contact {
+      margin-bottom: 8vh;
+  }
+} 
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    /* this will be applied on any screen smaller than 575px */
+  .contact {
+      margin-bottom: 15px;
+  }
+}

@@ -1,24 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Nav from './components/Nav';
+import Footer from './components/Footer'
+import About from './components/About';
+import Work from './components/Work'
+import './css/App.css';
 
 function App() {
+  const [aboutSelected, setAboutSelected] = useState(true);
+  const [workSelected, setWorkSelected] = useState(false);
+  const [contactSelected, setContactSelected] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav
+        aboutSelected={aboutSelected}
+        setAboutSelected={setAboutSelected}
+        workSelected={workSelected}
+        setWorkSelected={setWorkSelected}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+      ></Nav>
+      <main>
+        {/* {aboutSelected ? (
+          <>
+            <About></About>
+          </>
+        ) : (
+          <Work></Work>
+        )} */}
+        {aboutSelected &&
+          <About></About>
+        }
+        {workSelected &&
+          <Work></Work>
+        }
+      </main>
+      <Footer></Footer>
     </div>
   );
 }
