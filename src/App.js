@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Nav from './components/Nav';
 import Footer from './components/Footer'
 import About from './components/About';
-import Work from './components/Work'
+import Work from './components/Work';
+import Contact from './components/Contact';
 import './css/App.css';
 
 function App() {
@@ -21,18 +22,14 @@ function App() {
         setContactSelected={setContactSelected}
       ></Nav>
       <main>
-        {/* {aboutSelected ? (
-          <>
-            <About></About>
-          </>
-        ) : (
-          <Work></Work>
-        )} */}
         {aboutSelected &&
           <About></About>
         }
         {workSelected &&
           <Work></Work>
+        }
+        {contactSelected &&
+          <Contact></Contact>
         }
       </main>
       <Footer></Footer>

@@ -147,9 +147,10 @@ section {
   padding: 60px 5% 60px 8%;
 }
 
-.hover-item {
+.active-category {
+  color: black;
   transition: .5s ease-in-out;
-  }
+}
 
 .flex-row {
   display: flex;

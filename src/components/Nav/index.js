@@ -18,36 +18,36 @@ function Nav(props) {
       <nav>
         <ul>
           <li className={aboutSelected && 'header-active'}>
-            <a 
+            <a className={aboutSelected && 'active-category'}
               onClick={() => {
                 setAboutSelected(true);
                 setWorkSelected(false);
                 setContactSelected(false);
               }}
               href="#about-me" 
-              className="hover-item"
+              className={aboutSelected && 'active-category'}
             >About Me</a>
           </li>
           <li className={workSelected && 'header-active'}>
-            <a 
+            <a className={workSelected && 'active-category'}
               onClick={() => {
                 setAboutSelected(false);
                 setWorkSelected(true);
                 setContactSelected(false);
               }}
               href="#my-work" 
-              className="hover-item"
+              className={workSelected && 'active-category'}
             >My Work</a>
           </li>
           <li className={contactSelected && 'header-active'}>
-            <a 
+            <a
               onClick={() => {
                 setAboutSelected(false);
                 setWorkSelected(false);
                 setContactSelected(true);
               }}
               href="#contact-me" 
-              className="hover-item"
+              className={contactSelected && 'active-category'}
             >Get In Touch</a>
           </li>
         </ul>
