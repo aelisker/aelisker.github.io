@@ -17,8 +17,8 @@ function Nav(props) {
       </h1>
       <nav>
         <ul>
-          <li className={aboutSelected && 'header-active'}>
-            <a className={aboutSelected && 'active-category'}
+          <li className={aboutSelected === true ? 'header-active' : undefined}>
+            <a
               onClick={() => {
                 setAboutSelected(true);
                 setWorkSelected(false);
@@ -28,8 +28,8 @@ function Nav(props) {
               className={aboutSelected && 'active-category'}
             >About Me</a>
           </li>
-          <li className={workSelected && 'header-active'}>
-            <a className={workSelected && 'active-category'}
+          <li className={workSelected === true ? 'header-active' : undefined}>
+            <a
               onClick={() => {
                 setAboutSelected(false);
                 setWorkSelected(true);
