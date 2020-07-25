@@ -1,37 +1,12 @@
 import React, { useState } from 'react';
-import Nav from './components/Nav';
-import Footer from './components/Footer'
-import About from './components/About';
-import Work from './components/Work';
-import Contact from './components/Contact';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import './css/App.css';
 
 function App() {
-  const [aboutSelected, setAboutSelected] = useState(true);
-  const [workSelected, setWorkSelected] = useState(false);
-  const [contactSelected, setContactSelected] = useState(false);
-
   return (
     <div className="App">
-      <Nav
-        aboutSelected={aboutSelected}
-        setAboutSelected={setAboutSelected}
-        workSelected={workSelected}
-        setWorkSelected={setWorkSelected}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
-      <main>
-        {aboutSelected &&
-          <About></About>
-        }
-        {workSelected &&
-          <Work></Work>
-        }
-        {contactSelected &&
-          <Contact></Contact>
-        }
-      </main>
+      <Header></Header>
       <Footer></Footer>
     </div>
   );

@@ -35,7 +35,7 @@ function Contact() {
   }
 
   return (
-    <section id="contact-me" className="contact">
+    <section id="contact" className="contact">
       <div className="flex-row">
         <div className="section-title">
           <h2>

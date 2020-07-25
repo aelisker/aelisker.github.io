@@ -1,14 +1,7 @@
 import React from 'react';
 
 function Nav(props) {
-  const {
-    aboutSelected,
-    setAboutSelected,
-    workSelected,
-    setWorkSelected,
-    contactSelected,
-    setContactSelected
-  } = props;
+  const tabs = ['About', 'Work', 'Contact'];
 
   return (
     <header>
@@ -17,39 +10,22 @@ function Nav(props) {
       </h1>
       <nav>
         <ul>
-          <li className={aboutSelected === true ? 'header-active' : undefined}>
-            <a
-              onClick={() => {
-                setAboutSelected(true);
-                setWorkSelected(false);
-                setContactSelected(false);
-              }}
-              href="#about-me" 
-              className={aboutSelected && 'active-category'}
-            >About Me</a>
-          </li>
-          <li className={workSelected === true ? 'header-active' : undefined}>
-            <a
-              onClick={() => {
-                setAboutSelected(false);
-                setWorkSelected(true);
-                setContactSelected(false);
-              }}
-              href="#my-work" 
-              className={workSelected && 'active-category'}
-            >My Work</a>
-          </li>
-          <li className={contactSelected && 'header-active'}>
-            <a
-              onClick={() => {
-                setAboutSelected(false);
-                setWorkSelected(false);
-                setContactSelected(true);
-              }}
-              href="#contact-me" 
-              className={contactSelected && 'active-category'}
-            >Get In Touch</a>
-          </li>
+          {tabs.map(tab => (
+            <li 
+              key={tab}
+              className={props.currentPage === tab ? 'header-active' : undefined}
+            >
+              <a
+                href={'#' + tab.toLowerCase()}
+                onClick={() => props.handlePageChange(tab)}
+                className={
+                  props.currentPage === tab ? 'active-category' : undefined
+                }
+              >
+                {tab}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
