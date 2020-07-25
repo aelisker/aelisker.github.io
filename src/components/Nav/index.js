@@ -1,7 +1,11 @@
 import React from 'react';
 
 function Nav(props) {
-  const tabs = ['About', 'Work', 'Contact'];
+  const tabs = [
+    {name:'About Me', id: 'About'}, 
+    {name: 'My Work', id: 'Work'},
+    {name: 'Reach Out', id: 'Contact'}
+  ];
 
   return (
     <header>
@@ -10,19 +14,19 @@ function Nav(props) {
       </h1>
       <nav>
         <ul>
-          {tabs.map(tab => (
+          {tabs.map(({name, id}) => (
             <li 
-              key={tab}
-              className={props.currentPage === tab ? 'header-active' : undefined}
+              key={id}
+              className={props.currentPage === id ? 'header-active' : undefined}
             >
               <a
-                href={'#' + tab.toLowerCase()}
-                onClick={() => props.handlePageChange(tab)}
+                href={'#' + id.toLowerCase()}
+                onClick={() => props.handlePageChange(id)}
                 className={
-                  props.currentPage === tab ? 'active-category' : undefined
+                  props.currentPage === id ? 'active-category' : undefined
                 }
               >
-                {tab}
+                {name}
               </a>
             </li>
           ))}
