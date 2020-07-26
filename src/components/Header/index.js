@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Nav from '../Nav';
 import About from '../pages/about';
 import Work from '../pages/work';
+import Resume from '../pages/resume';
 import Contact from '../pages/contact';
 
 function Header() {
@@ -16,6 +17,10 @@ function Header() {
       case 'Work':
         return(
           <Work />
+        );
+      case 'Resume':
+        return(
+          <Resume />
         );
       case 'Contact':
         return(

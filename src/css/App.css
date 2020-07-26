@@ -99,12 +99,6 @@ header nav ul li a {
   line-height: 1.6;
 }
 
-/* header nav ul li a:hover {
-  color: rgba(0, 0, 0, 1);
-  background: white;
-  transition: 1s;
-} */
-
 .header-active {
   color: rgba(0, 0, 0, 1) !important;
   background: white;
@@ -202,7 +196,6 @@ section {
   font-style: italic;
   text-shadow: 0 0 10px rgba(0, 0, 0, .5);
   display: inline;
-  width: 100%;
   text-align: right;
 }
 
@@ -354,9 +347,26 @@ section {
 .submit-btn:focus {
   outline: none;
 }
-
 /**End contact**/
 
+/* Start Resume */
+#skill-writeup {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.mern-label {
+  font-weight: bolder;
+  color: black;
+}
+
+.skill-list {
+  list-style-type: none;
+}
+
+.skill-list li {
+  padding: 2px 0px;
+}
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     /* this will be applied on any screen smaller than 980px */

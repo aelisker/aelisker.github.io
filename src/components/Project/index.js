@@ -28,12 +28,12 @@ function Project(props) {
         className="react-icon work-icon"
       ><GithubIcon/></a>
 
-      {deployedUrl.length && 
+      {deployedUrl.length > 0 ? (
         <a 
-          href={deployedUrl} 
-          className="react-icon work-icon"
-        ><ChromeIcon/></a>
-      }
+        href={deployedUrl} 
+        className="react-icon work-icon"
+      ><ChromeIcon/></a>
+      ) : ''}
       
       <div className="grid-text active">
         <h3>{' '}{name}</h3>

@@ -5,6 +5,7 @@ function Nav(props) {
   const tabs = [
     {name:'About Me', id: 'About'}, 
     {name: 'My Work', id: 'Work'},
+    {name: 'Skills', id: 'Resume'},
     {name: 'Reach Out', id: 'Contact'}
   ];
 

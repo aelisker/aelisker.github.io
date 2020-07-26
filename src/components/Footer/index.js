@@ -1,7 +1,7 @@
 import React from 'react';
 import Background from '../../assets/images/station-full-min.jpg'
 //https://www.npmjs.com/package/react-icons
-import { FaGithub, FaLinkedin, FaFileDownload } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaStackOverflow } from 'react-icons/fa';
 
 class GithubIcon extends React.Component {
   render() {
@@ -9,15 +9,15 @@ class GithubIcon extends React.Component {
   }
 }
 
-class LinkedIn extends React.Component {
+class LinkedInIcon extends React.Component {
   render() {
     return <h3><FaLinkedin/></h3>
   }
 }
 
-class DocumentIcon extends React.Component {
+class StackOverflowIcon extends React.Component {
   render() {
-    return <h3><FaFileDownload/></h3>
+    return <h3><FaStackOverflow/></h3>
   }
 }
 
@@ -41,16 +41,13 @@ function Nav() {
             <a 
               href="https://linkedin.com" 
               className="hover-item react-icon"
-            ><LinkedIn/></a>
+            ><LinkedInIcon/></a>
           </li>
           <li>
             <a 
-              onClick={() => {
-                alert(`Don't forget to add a download!`);
-              }}
-              href="#my-work" 
+              href="https://stackoverflow.com/users/8448036/aaron" 
               className="hover-item react-icon"
-            ><DocumentIcon/></a>
+            ><StackOverflowIcon/></a>
           </li>
         </ul>
       </nav>
