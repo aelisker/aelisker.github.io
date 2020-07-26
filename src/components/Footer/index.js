@@ -1,4 +1,5 @@
 import React from 'react';
+import Background from '../../assets/images/station-full.jpg'
 //https://www.npmjs.com/package/react-icons
 import { FaGithub, FaLinkedin, FaFileDownload } from 'react-icons/fa';
 
@@ -22,7 +23,12 @@ class DocumentIcon extends React.Component {
 
 function Nav() {
   return (
-    <footer className="page-footer">
+    <footer 
+      className="page-footer"
+      style={{
+        backgroundImage: `url(${Background})`
+      }}
+    >
       <nav>
         <ul>
           <li>

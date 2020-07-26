@@ -44,27 +44,42 @@ function Contact() {
         </div>
         <div className="content flex-row">
           <form id="contact-form" onSubmit={handleSubmit}>
-            <div>
-              <label htmlFor="name">Name:</label>
-              <input type="text" name="name"
-                defaultValue={name} onBlur={handleChange} />
+            <div className="input-group">
+              <label 
+                className="contact-label"
+                htmlFor="name"
+              >Name:</label>
+              <div>
+                <input type="text" name="name" className="input-area"
+                  defaultValue={name} onBlur={handleChange} />
+              </div>
             </div>
-            <div>
-              <label htmlFor="email">Email address:</label>
-              <input type="email" name="email"
-                defaultValue={email} onBlur={handleChange} />
+            <div className="input-group">
+              <label 
+                className="contact-label"
+                htmlFor="email"
+              >Email address:</label>
+              <div>
+                <input type="email" name="email" className="input-area"
+                  defaultValue={email} onBlur={handleChange} />
+              </div>
             </div>
-            <div>
-              <label htmlFor="message">Message:</label>
-              <textarea name="message" rows="5"
-                defaultValue={message} onBlur={handleChange} />
+            <div className="input-group">
+              <label 
+                className="contact-label"
+                htmlFor="message"
+              >Message:</label>
+              <div>
+                <textarea name="message" rows="5" className="input-area"
+                  defaultValue={message} onBlur={handleChange} />
+              </div>
             </div>
             {errorMessage && (
               <div>
                 <p className="error-text">{errorMessage}</p>
               </div>
             )}
-            <button type="submit">Submit</button>
+            <button className="submit-btn" type="submit">Submit</button>
           </form>
         </div>
       </div>
