@@ -10,7 +10,7 @@ function Nav(props) {
   return (
     <header>
       <h1>
-        <a href="#/">My Portfolio</a>
+        <a href="/">My Portfolio</a>
       </h1>
       <nav>
         <ul>

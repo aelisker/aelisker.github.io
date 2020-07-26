@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Tech-Stop-N-Shop",
-    "subtitle": "Node MVC Application w/ Auth through Passport",
+    "subtitle": "Node MVC Application w/ Passport Auth",
     "repoUrl": "https://github.com/DHernandez24e/tech-stop-n-shop",
     "deployedUrl": "https://tech-stop-n-shop.herokuapp.com/",
     "imageFileName": "tech.jpg"

@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Project from '../Project';
 import projects from '../../projects.json';
 
 function Work() {
-  const [projectList, setProjectList] = useState(projects);
-
   return (
     <section id="work" className="about">
       <div className="flex-row">
@@ -15,7 +13,7 @@ function Work() {
         </div>
         <div className="content service-grid-wrapper">
           <div className="service-grid-container">
-            {projectList.map((project) => {
+            {projects.map((project) => {
               return (
                 <Project
                   key={project.name}

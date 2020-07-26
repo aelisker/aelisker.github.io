@@ -228,7 +228,6 @@ section {
 .service-grid-item {
   width: 100%;
   background-size: cover;
-  padding: 15px 0;
   border: 2px solid var(--primary-color);
   display: flex;
   align-items: flex-end;
@@ -261,6 +260,7 @@ section {
   left: 0;
   opacity: 1;
   transition: 1s;
+  backface-visibility: hidden;
 }
 
 .service-grid-item:hover::after, .service-grid-item:hover::before {
@@ -268,16 +268,31 @@ section {
   transition: 1;
 }
 
-.service-grid-item:hover .grid-text, .active {
-  color: aqua;
+.service-grid-item:hover .grid-text,
+.service-grid-item:hover .work-icon {
+  color: white;
   transition: 1s;
+  opacity: 1;
   transition-timing-function: ease-out;
+  z-index: 9999;
+}
+
+.work-icon {
+  align-self: flex-start;
+  transition: .5s ease;
+  opacity: 0;
+  font-size: 8vh;
+  margin: 10px;
 }
 
 .grid-text {
   background: black;
-  z-index: 5;
+  z-index: 9999;
   padding: 10px 5px 10px 3px;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  text-align: left;
 }
 
 .service-grid-item a .grid-text {
