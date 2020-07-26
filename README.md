@@ -1,7 +1,33 @@
+# React Portfolio ![MIT-license](./src/license/license-MIT-brightgreen.svg)
+
+## Description
+This portfolio is dual purpose, meaning to show off my existing work as well as serve as a challenge to develop my skills with the React library. This will likely be updated over time.
+
+## Table of Contents
+* [Usage](#Usage)
+
+* [License](#License)
+
+* [Questions](#Questions)
+
+* [Create React App](#CRA)
+  
+  
+## Usage
+You can find the fully deployed application [here](tbd).
+
+[![live-application](./src/assets/repository-material/screenshot.jpg)](tbd)
+
+## License
+A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+
+To view the full license, [click here](./src/assets/repository-material/license/MIT.txt).
+
+## Questions
+If you have any questions, you can find me at [aelisker](https://github.com/aelisker) and via email at [alisker@protonmail.com](mailto:alisker@protonmail.com).
+
+## CRA
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
 In the project directory, you can run:
 
 ### `npm start`
