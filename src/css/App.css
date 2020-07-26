@@ -219,8 +219,8 @@ section {
   color:var(--primary-color);
   font-size: 1.2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1ft;
   grid-auto-flow: row;
   gap: 12px;
 }
@@ -234,6 +234,8 @@ section {
   align-items: flex-end;
   justify-content: left;
   position: relative;
+  min-height: 250px;
+  max-height: 400px;
 }
 
 /*Idea for gradient swap came from https://keithjgrant.com/posts/2017/07/transitioning-gradients/*/
@@ -272,6 +274,12 @@ section {
   transition-timing-function: ease-out;
 }
 
+.grid-text {
+  background: black;
+  z-index: 5;
+  padding: 10px 5px 10px 3px;
+}
+
 .service-grid-item a .grid-text {
   padding: 10px;
   background: var(--primary-color);
@@ -287,36 +295,6 @@ section {
 .grid-text h4 {
   font-weight: normal;
 }
-
-.service-grid-item.panel-1 {
-  grid-column: 1/3;
-  grid-row: 1/3;
-  min-height: 400px;
-  max-height: 500px;
-  /* background-image: url("../images/tech.JPG"); */
-}
-
-.service-grid-item.panel-2, .service-grid-item.panel-3, .service-grid-item.panel-4, .service-grid-item.panel-5 {
-  min-height: 200px;
-  max-height: 250px;
-}
-
-.service-grid-item.panel-2 {
-  /* background-image: url("../images/netflix.jpg"); */
-}
-
-.service-grid-item.panel-3 {
-  /* background-image: url("../images/weather.jpg"); */
-}
-
-.service-grid-item.panel-4 {
-  /* background-image: url("../images/schedule.jpg"); */
-}
-
-.service-grid-item.panel-5 {
-  /* background-image: url("../images/quiz.jpg"); */
-}
-
 /**End grid**/
 
 /**Contact below**/
