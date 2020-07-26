@@ -182,6 +182,27 @@ section {
   width: 15%;
 }
 
+/**Hero below**/
+.hero {
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  background-attachment: fixed;
+  height: 200px;
+}
+
+.hero-subtitle {
+  color: #fff;
+  line-height: 1.2;
+  font-size: 3vw;
+  font-style: italic;
+  text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  display: inline;
+  width: 100%;
+  text-align: right;
+}
+
 /*Grid area*/
 .service-grid-wrapper {
   display: flex;
