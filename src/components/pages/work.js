@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from '../Project';
-import projects from '../../projects.json';
+import projects from '../Project/projects.json';
 
 function Work() {
   return (
@@ -16,7 +16,7 @@ function Work() {
             {projects.map((project) => {
               return (
                 <Project
-                  key={project.name}
+                  key={project.id}
                   name={project.name}
                   subtitle={project.subtitle}
                   deployedUrl={project.deployedUrl}

@@ -1,4 +1,5 @@
 import React from 'react';
+import Background from '../../assets/images/station-full-min.jpg'
 
 function Nav(props) {
   const tabs = [
@@ -8,7 +9,10 @@ function Nav(props) {
   ];
 
   return (
-    <header>
+    <header
+      style={{
+        backgroundImage: `url(${Background})`
+      }}>
       <h1>
         <a href="/">My Portfolio</a>
       </h1>

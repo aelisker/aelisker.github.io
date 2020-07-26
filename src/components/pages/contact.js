@@ -2,23 +2,23 @@ import React, { useState } from 'react';
 
 function Contact() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-  const { name, email, message } = formState;
+  const { name, email, message } = formState
   const [errorMessage, setErrorMessage] = useState('');
 
   function handleChange(e) {
+    setFormState({ ...formState, [e.target.name]: e.target.value })
     if (e.target.name === 'email') {
       // best email regex https://emailregex.com/
       // eslint-disable-next-line
       const isValid = e.target.value.match(/(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/);
-
       if (!isValid) {
-        setErrorMessage('Your email is invalid');
+        setErrorMessage('Your email is invalid.');
       } else {
         setErrorMessage('');
       }
     } else {
       if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required`);
+        setErrorMessage(`${e.target.name} is required.`);
       } else {
         setErrorMessage('');
       }
@@ -30,7 +30,18 @@ function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if(formState.name.length && formState.email.length && formState.message.length) {
+    if (!formState.name.length || !formState.email.length || !formState.message.length) {
+      setErrorMessage(`
+        ${!formState.name.length && formState.email.length && formState.message.length ? 'name is required' :
+          !formState.name.length && !formState.email.length && formState.message.length ? 'name and email are required' :
+          !formState.name.length && formState.email.length && !formState.message.length ? 'name and message are required' :
+          formState.name.length && !formState.email.length && formState.message.length ? 'email is required' :
+          formState.name.length && !formState.email.length && !formState.message.length ? 'email and message are required' :
+          formState.name.length && formState.email.length && !formState.message.length ? 'message is required' :
+          'name, email, and message are required'
+      }`)
+    }
+    if (formState.name.length && formState.email.length && formState.message.length) {
       alert(`Hi ${formState.name}. This is a proof of concept and currently not hooked up, but you can use ${formState.email} to email me at alisker@protonmail.com with your message, '${formState.message}'.`);
     }
   }
@@ -46,7 +57,7 @@ function Contact() {
         <div className="content flex-row">
           <form id="contact-form" onSubmit={handleSubmit}>
             <div className="input-group">
-              <label 
+              <label
                 className="contact-label"
                 htmlFor="name"
               >Name:</label>
@@ -56,7 +67,7 @@ function Contact() {
               </div>
             </div>
             <div className="input-group">
-              <label 
+              <label
                 className="contact-label"
                 htmlFor="email"
               >Email address:</label>
@@ -66,7 +77,7 @@ function Contact() {
               </div>
             </div>
             <div className="input-group">
-              <label 
+              <label
                 className="contact-label"
                 htmlFor="message"
               >Message:</label>

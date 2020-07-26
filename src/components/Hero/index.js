@@ -1,5 +1,5 @@
 import React from 'react';
-import Background from '../../assets/images/station-full.jpg'
+import Background from '../../assets/images/station-full-min.jpg'
 
 function Hero() {
   return (

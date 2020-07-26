@@ -1,5 +1,5 @@
 import React from 'react';
-import Background from '../../assets/images/station-full.jpg'
+import Background from '../../assets/images/station-full-min.jpg'
 //https://www.npmjs.com/package/react-icons
 import { FaGithub, FaLinkedin, FaFileDownload } from 'react-icons/fa';
 
