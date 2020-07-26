@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-port/static/css/main.a8923c85.chunk.css",
+    "main.js": "/react-port/static/js/main.52857265.chunk.js",
+    "main.js.map": "/react-port/static/js/main.52857265.chunk.js.map",
+    "runtime-main.js": "/react-port/static/js/runtime-main.55c6854e.js",
+    "runtime-main.js.map": "/react-port/static/js/runtime-main.55c6854e.js.map",
+    "static/js/2.8779e25f.chunk.js": "/react-port/static/js/2.8779e25f.chunk.js",
+    "static/js/2.8779e25f.chunk.js.map": "/react-port/static/js/2.8779e25f.chunk.js.map",
+    "index.html": "/react-port/index.html",
+    "precache-manifest.e363b25e5e69e2c0b174c15ec42fdcfc.js": "/react-port/precache-manifest.e363b25e5e69e2c0b174c15ec42fdcfc.js",
+    "service-worker.js": "/react-port/service-worker.js",
+    "static/css/main.a8923c85.chunk.css.map": "/react-port/static/css/main.a8923c85.chunk.css.map",
+    "static/js/2.8779e25f.chunk.js.LICENSE.txt": "/react-port/static/js/2.8779e25f.chunk.js.LICENSE.txt",
+    "static/media/station-full-min.jpg": "/react-port/static/media/station-full-min.f364adcb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.55c6854e.js",
+    "static/js/2.8779e25f.chunk.js",
+    "static/css/main.a8923c85.chunk.css",
+    "static/js/main.52857265.chunk.js"
+  ]
+}
