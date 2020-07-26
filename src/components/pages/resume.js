@@ -5,7 +5,6 @@ import { FaMdb } from 'react-icons/fa';
 function Resume() {
   return (
     <>
-      <Hero></Hero>
       <section id="about" className="about">
         <div className="flex-row">
           <div className="section-title">

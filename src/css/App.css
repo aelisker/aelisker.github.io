@@ -196,6 +196,7 @@ section {
   font-style: italic;
   text-shadow: 0 0 10px rgba(0, 0, 0, .5);
   display: inline;
+  width: 100%;
   text-align: right;
 }
 
@@ -418,6 +419,11 @@ section {
       margin: 0 30px;
   }
 
+  
+  .about-text {
+    font-size: 2.0em;
+  }
+
   /**Reformatting the section titles from sitting left with right border to sitting top with bottom border**/
   .section-title {
       text-align: center;
@@ -468,5 +474,24 @@ section {
     /* this will be applied on any screen smaller than 575px */
   .contact {
       margin-bottom: 15px;
+  }
+
+  .service-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  
+  .service-grid-item {
+    min-height: 250px;
+    max-height: 500px;
+  }
+  
+  .work-icon {
+    opacity: 1;
+  }
+  
+  .grid-text {
+    opacity: 1;
+    width: 100%;
   }
 }
