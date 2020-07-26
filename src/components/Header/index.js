@@ -29,7 +29,7 @@ function Header() {
   };
 
   return(
-    <div>
+    <div className="content-wrap">
       <Nav 
         currentPage={currentPage}
         handlePageChange={handlePageChange}

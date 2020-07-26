@@ -118,28 +118,37 @@ header nav ul li a {
 /**End header**/
 
 .page-footer {
-  padding: 20px 5%;
-  background-color: black;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  position: -webkit-sticky;
-  top: 0;
   background-image: url("../assets/images/station-full.jpg");
   background-size: cover;
   background-attachment: fixed;
-  z-index: 9999;
   justify-items: center;
   justify-content: center;
+  align-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
 }
 
 .react-icon {
   color: white;
-  font-size: x-large;
+  font-size: 2rem;
 }
 
 footer nav ul li {
   margin: 0px 10px;
+}
+
+/* used this for sticking footer on bottom https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/#:~:text=The%20footer%20is%20set%20to,the%20content%2Dwrap%20above%20it. */
+.App {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 4rem;
 }
 
 /**General section formatting below**/
@@ -372,8 +381,12 @@ section {
 @media screen and (max-width: 768px) {
   /* this will be applied on any screen between 768px and 575px */
   
+  .hero {
+    height: 125px;
+  }
+
   section {
-      padding: 30px 15px 15px 15px;
+      padding: 30px 15px;
   }
 
   /**Changing font to vw lower than 768px**/
