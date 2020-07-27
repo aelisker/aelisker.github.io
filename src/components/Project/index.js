@@ -19,7 +19,11 @@ function Project(props) {
     <div
       className="service-grid-item"
       style={{
-        backgroundImage: `url("/images/${imageFileName}")`,
+        // backgroundImage: `url("/images/${imageFileName}")`,
+        // I originally used the above code to access the images from the public dir,
+        // which worked even after building the final app. When pushing to gh-pages, this stopped working
+        // solution found here after a lot of searching https://stackoverflow.com/questions/36028061/how-to-nest-template-strings-in-es6
+        backgroundImage: `url(${require(`../../assets/images/${imageFileName}`)})`,
         zIndex: 0
       }}
     >

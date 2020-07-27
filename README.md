@@ -1,4 +1,4 @@
-# React Portfolio ![MIT-license](./src/license/license-MIT-brightgreen.svg)
+# React Portfolio ![MIT-license](./src/assets/repository-material/license/license-MIT-brightgreen.svg)
 
 ## Description
 This portfolio is dual purpose, meaning to show off my existing work as well as serve as a challenge to develop my skills with the React library. This will likely be updated over time.
@@ -14,9 +14,9 @@ This portfolio is dual purpose, meaning to show off my existing work as well as 
   
   
 ## Usage
-You can find the fully deployed application [here](tbd).
+You can find the fully deployed application [here](https://aelisker.github.io/react-port).
 
-[![live-application](./src/assets/repository-material/screenshot.jpg)](tbd)
+[![live-application](./src/assets/repository-material/screenshot.jpg)](https://aelisker.github.io/react-port)
 
 ## License
 A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
