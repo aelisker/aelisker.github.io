@@ -70,7 +70,7 @@ header a {
   color: white;
 }
 
-header h1 a{
+header h1 {
   margin: 0;
   font-weight: bold;
   font-size: 36px;
