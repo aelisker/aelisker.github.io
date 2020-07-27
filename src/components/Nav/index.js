@@ -15,7 +15,7 @@ function Nav(props) {
         backgroundImage: `url(${Background})`
       }}>
       <h1>
-        <a href="/">My Portfolio</a>
+        My Portfolio
       </h1>
       <nav>
         <ul>
