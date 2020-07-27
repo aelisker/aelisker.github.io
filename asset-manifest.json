@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-port/static/css/main.a8923c85.chunk.css",
+    "main.css": "/react-port/static/css/main.fc9032a1.chunk.css",
     "main.js": "/react-port/static/js/main.65f22806.chunk.js",
     "main.js.map": "/react-port/static/js/main.65f22806.chunk.js.map",
     "runtime-main.js": "/react-port/static/js/runtime-main.55c6854e.js",
@@ -8,9 +8,9 @@
     "static/js/2.6179529b.chunk.js": "/react-port/static/js/2.6179529b.chunk.js",
     "static/js/2.6179529b.chunk.js.map": "/react-port/static/js/2.6179529b.chunk.js.map",
     "index.html": "/react-port/index.html",
-    "precache-manifest.ec8fb4183cc50c6fbd94876d3f272eb1.js": "/react-port/precache-manifest.ec8fb4183cc50c6fbd94876d3f272eb1.js",
+    "precache-manifest.6cb990841b35b973520a48c0f4567112.js": "/react-port/precache-manifest.6cb990841b35b973520a48c0f4567112.js",
     "service-worker.js": "/react-port/service-worker.js",
-    "static/css/main.a8923c85.chunk.css.map": "/react-port/static/css/main.a8923c85.chunk.css.map",
+    "static/css/main.fc9032a1.chunk.css.map": "/react-port/static/css/main.fc9032a1.chunk.css.map",
     "static/js/2.6179529b.chunk.js.LICENSE.txt": "/react-port/static/js/2.6179529b.chunk.js.LICENSE.txt",
     "static/media/budget-min.jpg": "/react-port/static/media/budget-min.c7f48f74.jpg",
     "static/media/netflix-min.jpg": "/react-port/static/media/netflix-min.aa52e2b9.jpg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.55c6854e.js",
     "static/js/2.6179529b.chunk.js",
-    "static/css/main.a8923c85.chunk.css",
+    "static/css/main.fc9032a1.chunk.css",
     "static/js/main.65f22806.chunk.js"
   ]
 }
