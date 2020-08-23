@@ -1,6 +1,14 @@
-[
+[ 
   {
     "id": 1,
+    "name": "Workout Tracker",
+    "subtitle": "MERN Full Stack",
+    "repoUrl": "https://github.com/aelisker/workout-tracker",
+    "deployedUrl": "https://adj-workout-tracker.herokuapp.com/",
+    "imageFileName": "workout-min.jpg"
+  },
+  {
+    "id": 2,
     "name": "Tech-Stop-N-Shop",
     "subtitle": "Node MVC Application w/ Passport Auth",
     "repoUrl": "https://github.com/DHernandez24e/tech-stop-n-shop",
@@ -8,7 +16,7 @@
     "imageFileName": "tech-min.jpg"
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Budget Tracker",
     "subtitle": "Progressive Web App",
     "repoUrl": "https://github.com/aelisker/budget-tracker-PWA",
@@ -16,7 +24,7 @@
     "imageFileName": "budget-min.jpg"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Netflix Movie Picker",
     "subtitle": "JS w/ API calls, Foundation",
     "repoUrl": "https://github.com/aelisker/netflix-movie-picker",
@@ -24,20 +32,12 @@
     "imageFileName": "netflix-min.jpg"
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Tech-Blog",
     "subtitle": "MVC Application with Sequelize ORM",
     "repoUrl": "https://github.com/aelisker/tech-blog",
     "deployedUrl": "https://powerful-lowlands-50720.herokuapp.com/",
     "imageFileName": "tech-blog-min.jpg"
-  },
-  {
-    "id": 5,
-    "name": "Weather Dashboard",
-    "subtitle": "JS w/ API call",
-    "repoUrl": "https://github.com/aelisker/weather-dashboard",
-    "deployedUrl": "https://aelisker.github.io/weather-dashboard/",
-    "imageFileName": "weather-min.jpg"
   },
   {
     "id": 6,
