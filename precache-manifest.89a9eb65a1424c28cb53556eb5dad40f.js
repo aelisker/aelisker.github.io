@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4314630074a2a5f265337716a5f1df58",
+    "revision": "fc4a65c81e2be912731cdfac809c7e6d",
     "url": "/react-port/index.html"
   },
   {
-    "revision": "4c8e97f4875560df1ca7",
+    "revision": "86153467596741bd349f",
     "url": "/react-port/static/css/main.fc9032a1.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-port/static/js/2.6179529b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4c8e97f4875560df1ca7",
-    "url": "/react-port/static/js/main.65f22806.chunk.js"
+    "revision": "86153467596741bd349f",
+    "url": "/react-port/static/js/main.d3fff6c3.chunk.js"
   },
   {
     "revision": "5a85570562e2db740300",
@@ -50,5 +50,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9d01c9a635b7855907c91d59b6c57ffc",
     "url": "/react-port/static/media/weather-min.9d01c9a6.jpg"
+  },
+  {
+    "revision": "a4f9065c79a5e2c136a95578ec73d117",
+    "url": "/react-port/static/media/workout-min.a4f9065c.jpg"
   }
 ]);
