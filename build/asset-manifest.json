@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/react-port/static/css/main.fc9032a1.chunk.css",
-    "main.js": "/react-port/static/js/main.d3fff6c3.chunk.js",
-    "main.js.map": "/react-port/static/js/main.d3fff6c3.chunk.js.map",
+    "main.js": "/react-port/static/js/main.bbd3cc91.chunk.js",
+    "main.js.map": "/react-port/static/js/main.bbd3cc91.chunk.js.map",
     "runtime-main.js": "/react-port/static/js/runtime-main.55c6854e.js",
     "runtime-main.js.map": "/react-port/static/js/runtime-main.55c6854e.js.map",
-    "static/js/2.6179529b.chunk.js": "/react-port/static/js/2.6179529b.chunk.js",
-    "static/js/2.6179529b.chunk.js.map": "/react-port/static/js/2.6179529b.chunk.js.map",
+    "static/js/2.ec7eb483.chunk.js": "/react-port/static/js/2.ec7eb483.chunk.js",
+    "static/js/2.ec7eb483.chunk.js.map": "/react-port/static/js/2.ec7eb483.chunk.js.map",
     "index.html": "/react-port/index.html",
-    "precache-manifest.89a9eb65a1424c28cb53556eb5dad40f.js": "/react-port/precache-manifest.89a9eb65a1424c28cb53556eb5dad40f.js",
+    "precache-manifest.e1aeeb8f1b4a3bf4ddfe57a256238d9d.js": "/react-port/precache-manifest.e1aeeb8f1b4a3bf4ddfe57a256238d9d.js",
     "service-worker.js": "/react-port/service-worker.js",
     "static/css/main.fc9032a1.chunk.css.map": "/react-port/static/css/main.fc9032a1.chunk.css.map",
-    "static/js/2.6179529b.chunk.js.LICENSE.txt": "/react-port/static/js/2.6179529b.chunk.js.LICENSE.txt",
+    "static/js/2.ec7eb483.chunk.js.LICENSE.txt": "/react-port/static/js/2.ec7eb483.chunk.js.LICENSE.txt",
     "static/media/budget-min.jpg": "/react-port/static/media/budget-min.c7f48f74.jpg",
     "static/media/netflix-min.jpg": "/react-port/static/media/netflix-min.aa52e2b9.jpg",
     "static/media/social-api-min.jpg": "/react-port/static/media/social-api-min.f7b48471.jpg",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.55c6854e.js",
-    "static/js/2.6179529b.chunk.js",
+    "static/js/2.ec7eb483.chunk.js",
     "static/css/main.fc9032a1.chunk.css",
-    "static/js/main.d3fff6c3.chunk.js"
+    "static/js/main.bbd3cc91.chunk.js"
   ]
 }
