@@ -1,7 +1,7 @@
 import React from 'react';
 import Background from '../../assets/images/station-full-min.jpg'
 //https://www.npmjs.com/package/react-icons
-import { FaGithub, FaLinkedin, FaStackOverflow } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 class GithubIcon extends React.Component {
   render() {
@@ -15,9 +15,9 @@ class LinkedInIcon extends React.Component {
   }
 }
 
-class StackOverflowIcon extends React.Component {
+class EmailIcon extends React.Component {
   render() {
-    return <h3><FaStackOverflow/></h3>
+    return <h3><FaEnvelope/></h3>
   }
 }
 
@@ -39,15 +39,15 @@ function Nav() {
           </li>
           <li>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/aelisker/" 
               className="hover-item react-icon"
             ><LinkedInIcon/></a>
           </li>
           <li>
             <a 
-              href="https://stackoverflow.com/users/8448036/aaron" 
+              href="mailto:alisker@protonmail.com" 
               className="hover-item react-icon"
-            ><StackOverflowIcon/></a>
+            ><EmailIcon/></a>
           </li>
         </ul>
       </nav>

@@ -14,8 +14,7 @@ function About() {
           </div>
           <div className="content flex-row">
             <p className="about-text">
-              butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, minima molestiae vero eum magni dignissimos voluptates aliquam nisi dolores eos autem eveniet repellat natus corporis, magnam voluptatem pariatur possimus enim!
+            Systems Support Engineer and Full Stack Developer with a demonstrated history of working in the Information Technology industry. Graduate of the Coding Booting UC Berkeley Extension. Business Administration with a Bachelor of Science (BS) focused in Minor in Computer and Information Technology from University of Oregon. 
             </p>
           </div>
         </div>

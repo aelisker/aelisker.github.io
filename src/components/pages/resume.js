@@ -14,7 +14,7 @@ function Resume() {
             <div className="mern">
               <p id="skill-writeup">
                 Currently learning web development with a focus on the MERN stack. Starting with vanilla HTML and CSS, I've worked my way up from performing basic API GET requests to building my own RESTful API.
-                Feel free to <a href='resume.txt' download>download my resume</a>.
+                Feel free to <a href='Aaron_Lisker_Resume.PDF' download>download my resume</a>.
               </p>
               <h1 className="mern-label">Front End Technologies</h1>
               <ul className="skill-list">

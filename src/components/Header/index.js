@@ -22,10 +22,10 @@ function Header() {
         return(
           <Resume />
         );
-      case 'Contact':
-        return(
-          <Contact />
-        );
+      // case 'Contact':
+      //   return(
+      //     <Contact />
+      //   );
       default:
         return(
           <About />
